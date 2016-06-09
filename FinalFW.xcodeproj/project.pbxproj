@@ -10,6 +10,8 @@
 		A81E289F1D081CFE00997EF0 /* FinalFW.h in Headers */ = {isa = PBXBuildFile; fileRef = A81E289E1D081CFE00997EF0 /* FinalFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A81E28A61D081CFF00997EF0 /* FinalFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81E289B1D081CFE00997EF0 /* FinalFW.framework */; };
 		A81E28AB1D081CFF00997EF0 /* FinalFWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81E28AA1D081CFF00997EF0 /* FinalFWTests.m */; };
+		A81E28B71D081D0900997EF0 /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = A81E28B51D081D0900997EF0 /* Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A81E28B81D081D0900997EF0 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = A81E28B61D081D0900997EF0 /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A81E28A51D081CFF00997EF0 /* FinalFWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalFWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81E28AA1D081CFF00997EF0 /* FinalFWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalFWTests.m; sourceTree = "<group>"; };
 		A81E28AC1D081CFF00997EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81E28B51D081D0900997EF0 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = ../Manager.h; sourceTree = "<group>"; };
+		A81E28B61D081D0900997EF0 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = ../Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				A81E289E1D081CFE00997EF0 /* FinalFW.h */,
+				A81E28B51D081D0900997EF0 /* Manager.h */,
+				A81E28B61D081D0900997EF0 /* Manager.m */,
 				A81E28A01D081CFF00997EF0 /* Info.plist */,
 			);
 			path = FinalFW;
@@ -93,6 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81E28B71D081D0900997EF0 /* Manager.h in Headers */,
 				A81E289F1D081CFE00997EF0 /* FinalFW.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81E28B81D081D0900997EF0 /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +263,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -297,6 +305,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -315,6 +324,7 @@
 				INFOPLIST_FILE = FinalFW/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = vs.FinalFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -331,6 +341,7 @@
 				INFOPLIST_FILE = FinalFW/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = vs.FinalFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
