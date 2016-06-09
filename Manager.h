@@ -10,6 +10,6 @@
 
 @interface Manager : NSObject
 
-
+//Manager
 + (void)myManger;
 @end
